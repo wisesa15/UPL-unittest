@@ -33,7 +33,7 @@ class ThermometerTest {
 	@Test
 	void ambilSuhu()
 	{	
-		assertEquals(31, Thremo.getSuhu());
+		assertEquals(0, Thremo.getSuhu()); // default value dari konstruktor = 0
 	}
 	
 }
