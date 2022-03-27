@@ -23,19 +23,18 @@ public class Pintu {
 		this.suhuMaksimal = suhu;
 	}
 
-	public boolean bukaKunci(Thermometer thermo) {
-		if(thermo.getSuhu() > suhuMaksimal) {
+	public void bukaKunci(Thermometer thermo) {
+		if(thermo.getSuhu() <= suhuMaksimal) {
 			this.statusKunci = Status.TERBUKA;
+			bunyiAlarm(false); // Alarm tidak berbunyi
 		} else {
 			this.statusKunci = Status.TERKUNCI;
+			bunyiAlarm(true); // Alarm berbunyi
 		}
-		if (this.statusKunci == Status.TERBUKA) {
-			bunyiAlarm(false); // Alarm tidak berbunyi
-			return true; // True berarti kunci pintu berhasil terbuka
-		} else {
-			bunyiAlarm(true); // Alarm tidak berbunyi
-			return false; // False berarti kunci pintu tidak bisa terbuka
-		}
+	}
+	
+	public void kunciPintu() {
+		this.statusKunci = Status.TERKUNCI;
 	}
 	
 	private void bunyiAlarm(boolean alert) {

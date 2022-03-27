@@ -12,6 +12,6 @@ public class Thermometer {
 	}
 	
 	public int getSuhu() {
-		return suhuCelsius;
+		return this.suhuCelsius;
 	}
 }
