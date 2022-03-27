@@ -21,7 +21,9 @@ Penilaian:
 Pengumpulan Dokumen paling lambat tanggal 28 Maret 2022 jam 23:59.
 
 ## Deskripsi
-xxx
+Class Under Test yang digunakan, yaitu kelas Pintu dan kelas Thermometer.
+Kelas Pintu merupakan kelas yang dapat membuka pintu otomatis berdasarkan hasil dari suhu yang dibaca oleh kelas Thermometer.
+Apabila Thermometer menunjukkan suhu > suhu maksimal, maka kunci pintu tidak dapat dibuka dan akan membunyikan alarm (atribut statusKunci tetap terkunci dan atribut alarm berubah menjadi bunyi). Sedangkan apabila kelas Thermometer menunjukkan suhu <= suhu maksimal, maka kunci pintu dapat terbuka (atribut statusKunci berubah menjadi terbuka dan atribut alarm berubah menjadi mati)
 
 ## List Test Case
 ### Kelas Pintu
