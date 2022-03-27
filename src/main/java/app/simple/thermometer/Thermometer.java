@@ -3,8 +3,8 @@ package app.simple.thermometer;
 public class Thermometer {
 	private int suhuCelsius;
 	
-	public Thermometer(int suhu) {
-		this.suhuCelsius = suhu;
+	public Thermometer() {
+		this.suhuCelsius = 0;
 	}
 	
 	public void setSuhu(int suhu) {

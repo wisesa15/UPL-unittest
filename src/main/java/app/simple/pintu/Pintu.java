@@ -17,7 +17,7 @@ public class Pintu {
 	private int suhuMaksimal;
 	private Alarm alarm;
 	
-	public Pintu(Status status, int suhu) {
+	public Pintu(int suhu) {
 		this.alarm = Alarm.MATI; // secara default alarm akan mati
 		this.statusKunci = Status.TERKUNCI; // secara default pintu akan terkunci 
 		this.suhuMaksimal = suhu;
@@ -35,6 +35,10 @@ public class Pintu {
 	
 	public void kunciPintu() {
 		this.statusKunci = Status.TERKUNCI;
+	}
+	
+	public Status getStatusKunci() {
+		return this.statusKunci;
 	}
 	
 	private void bunyiAlarm(boolean alert) {
