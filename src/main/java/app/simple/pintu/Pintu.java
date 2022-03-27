@@ -41,6 +41,10 @@ public class Pintu {
 		return this.statusKunci;
 	}
 	
+	public Alarm getBunyiAlarm() {
+		return this.alarm;
+	}
+	
 	private void bunyiAlarm(boolean alert) {
 		if(alert) {
 			this.alarm = Alarm.BUNYI;
