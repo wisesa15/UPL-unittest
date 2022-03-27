@@ -19,3 +19,20 @@ Penilaian:
 4. Unit Test (30%)*
 5. Mock Object (10%)
 Pengumpulan Dokumen paling lambat tanggal 28 Maret 2022 jam 23:59.
+
+## Deskripsi
+xxx
+
+## List Test Case
+### Kelas Pintu
+- test buka kunci dengan menggunakan mock object thermometer dengan parameter suhu di bawah suhu maksimal, sama dengan suhu maksimal, di atas suhu maksimal
+- test kunci pintu
+- test bunyi alarm dengan input false dan true
+### Kelas Thermometer
+- test mengganti suhu
+- test mendapatkan suhu
+
+## Link Video Demo
+
+## Link Kode Program
+https://github.com/wisesa15/UPL-unittest/
