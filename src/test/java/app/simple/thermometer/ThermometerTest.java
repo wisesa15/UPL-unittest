@@ -30,6 +30,11 @@ class ThermometerTest {
 		
 		assertEquals(31, Thremo.getSuhu());
 	}
+	@Test
+	void ambilSuhu()
+	{	
+		assertEquals(31, Thremo.getSuhu());
+	}
 	
 }
 	
