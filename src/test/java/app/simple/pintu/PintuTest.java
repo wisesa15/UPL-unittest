@@ -23,8 +23,8 @@ class PintuTest {
 		pintu = new Pintu(37);
 	}
 	
-	@ParameterizedTest(name="(index) => suhu={0}, statusKunci={1}")
 	@DisplayName("Tes Buka Kunci dengan parameter di bawah, sama dengan, dan di atas suhu maksimal")
+	@ParameterizedTest(name="(index) => suhu={0}, statusKunci={1}")
 	@CsvSource({"35,TERBUKA","37,TERBUKA","38,TERKUNCI" })
 	void testBukaKunci(int suhu, Status statusKunci) {
 		Thermometer thermo = mock(Thermometer.class);
@@ -33,5 +33,23 @@ class PintuTest {
 		pintu.bukaKunci(thermo);
 		
 		assertEquals(statusKunci, pintu.getStatusKunci());
+	}
+	
+	@DisplayName("Tes Bunyi Alarm dengan parameter di bawah, sama dengan, dan di atas suhu maksimal")
+	@ParameterizedTest(name="(index) => suhu={0}, bunyiAlarm={1}")
+	@CsvSource({"35,MATI","37,MATI","38,BUNYI" })
+	void testBunyiAlarm(int suhu, Alarm bunyiAlarm) {
+		Thermometer thermo = mock(Thermometer.class);
+		when(thermo.getSuhu()).thenReturn(suhu);
+		
+		pintu.bukaKunci(thermo);
+		
+		assertEquals(bunyiAlarm, pintu.getBunyiAlarm());
+	}
+	
+	@DisplayName("Tes Kunci Pintu")
+	@Test
+	void testKunciPintu() {
+		assertEquals(Status.TERKUNCI, pintu.getStatusKunci());
 	}
 }
