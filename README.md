@@ -13,7 +13,7 @@ Apabila Thermometer menunjukkan suhu > suhu maksimal, maka kunci pintu tidak dap
 ### Kelas Pintu
 - test buka kunci dengan menggunakan mock object thermometer dengan parameter suhu di bawah suhu maksimal, sama dengan suhu maksimal, di atas suhu maksimal
 - test kunci pintu
-- test bunyi alarm dengan input false dan true
+- test bunyi alarm dengan menggunakan mock object thermometer dengan parameter suhu di bawah suhu maksimal, sama dengan suhu maksimal, di atas suhu maksimal
 ### Kelas Thermometer
 - test mengganti suhu
 - test mendapatkan suhu
