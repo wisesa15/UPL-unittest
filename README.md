@@ -1,4 +1,9 @@
 # UPL-unittest
+Anggota Kelompok:
+- Mellia Arya Firanur Sukma (24060118120003)
+- Muhammad Rizal Rifai (24060118130132)
+- Priyo Tripanca Wisesa (24060118140151)
+
 ## Deskripsi
 Class Under Test yang digunakan, yaitu kelas Pintu dan kelas Thermometer.
 Kelas Pintu merupakan kelas yang dapat membuka pintu otomatis berdasarkan hasil dari suhu yang dibaca oleh kelas Thermometer.
