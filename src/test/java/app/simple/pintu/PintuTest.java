@@ -50,6 +50,7 @@ class PintuTest {
 	@DisplayName("Tes Kunci Pintu")
 	@Test
 	void testKunciPintu() {
+		pintu.kunciPintu();
 		assertEquals(Status.TERKUNCI, pintu.getStatusKunci());
 	}
 }

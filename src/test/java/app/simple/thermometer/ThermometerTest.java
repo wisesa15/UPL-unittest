@@ -23,7 +23,7 @@ class ThermometerTest {
 		Thremo  = new Thermometer();
 	}
 	@Test
-	@DisplayName("Tes Buka Kunci dengan parameter di bawah, sama dengan, dan di atas suhu maksimal")
+	@DisplayName("Tes Mengubah suhu thermometer")
 	void testUbahSuhu()
 	{
 		Thremo.setSuhu(31);
@@ -31,7 +31,8 @@ class ThermometerTest {
 		assertEquals(31, Thremo.getSuhu());
 	}
 	@Test
-	void ambilSuhu()
+	@DisplayName("Tes Mengambil suhu thermometer")
+	void testAmbilSuhu()
 	{	
 		assertEquals(0, Thremo.getSuhu()); // default value dari konstruktor = 0
 	}
