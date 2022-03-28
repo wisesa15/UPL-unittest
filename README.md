@@ -14,6 +14,7 @@ Apabila Thermometer menunjukkan suhu > suhu maksimal, maka kunci pintu tidak dap
 - test mendapatkan suhu
 
 ## Link Video Demo
+https://www.youtube.com/watch?v=Nyj3sqhWVZ4
 
 ## Link Kode Program
 https://github.com/wisesa15/UPL-unittest/
